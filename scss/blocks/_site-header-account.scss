@@ -1,0 +1,36 @@
+.site-header__account {
+  @include listunstyled;
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-header__account--item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.site-header__middle--link {
+  position: relative;
+  z-index: 1;
+
+  &:hover {
+    color: $color-secondary-light;
+  }
+}
+
+.site-header__account--count {
+  position: absolute;
+  z-index: 1;
+  top: 65px;
+  right: 195px;
+  background-color: $color-orange;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #fff;
+}
