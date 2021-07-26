@@ -429,6 +429,112 @@ body {
   background-color: #fff;
 }
 
+.site-header__sitenav-box {
+  padding: 16px  45px;
+  background-color: #f9f9f9;
+}
+
+.sitenav {
+  background-color: #f9f9f9;
+}
+
+.sitenav__list {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.sitenav__item {
+  position: relative;
+}
+
+.sitenav__item .sitenav__dropdown-list {
+  position: absolute;
+  display: none;
+}
+
+.sitenav__item:hover .sitenav__dropdown-list {
+  display: block;
+}
+
+.sitenav__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.sitenav__link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  white-space: nowrap;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #151515;
+  -webkit-transition: color 0.3s ease, opacity 0.3s ease;
+  transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+.sitenav__link::after {
+  content: '';
+  display: block;
+  margin-left: 2px;
+  background-image: url("../../img/dropdown-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  width: 12px;
+  height: 12px;
+}
+
+.sitenav__link:hover {
+  color: rgba(106, 152, 60, 0.8);
+}
+
+.sitenav__link:active {
+  color: rgba(106, 152, 60, 0.6);
+}
+
+.sitenav__dropdown-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sitenav__dropdown-item {
+  margin-top: 5px;
+}
+
+.sitenav__dropdown__link {
+  display: inline-block;
+  white-space: nowrap;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 22px;
+  color: #151515;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.sitenav__dropdown__link:hover {
+  color: rgba(106, 152, 60, 0.8);
+}
+
+.site-header__sitenav-box {
+  padding: 16px  45px;
+  background-color: #f9f9f9;
+}
+
+@media only screen and (max-width: 1260px) {
+  .site-header__sitenav-box {
+
 .site-header__top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -480,6 +586,7 @@ body {
 
 @media only screen and (max-width: 700px) {
   .site-header__top {
+
     display: none;
   }
 }
