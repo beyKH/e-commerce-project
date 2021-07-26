@@ -1,0 +1,31 @@
+.site-header {
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.site-header__middle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.site-header__middle--link {
+  text-decoration: none;
+}
+
+.site-header__middle--img {
+  display: block;
+}
+
+.site-header__form {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  background-color: #f9f9f9;
+  border: 1px solid #d1d1d1;
+  border-radius: 12px;
+  padding: 11px 16px;
+}
+
