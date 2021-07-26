@@ -1,0 +1,41 @@
+.site-header__top{
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 45px;
+}
+.header-top__chat{
+  color: $color-secondary;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 16px;
+}
+.header-top__phone{
+  margin: 0 32px;
+}
+.header-top__phone,
+.header-top__email{
+  font-size: 12px;
+  line-height: 16px;
+  color: $color-primary;
+  text-decoration: none;
+}
+.header-top__right{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+.header-top__right-item:not(:last-child){
+  margin-right: 38px;
+}
+.header-top__right-item-link{
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 16px;
+  color: $color-secondary;
+}
+@media only screen and(max-width: 700px) {
+  .site-header__top{
+    display: none;
+  }
+}
