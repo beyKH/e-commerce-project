@@ -1,0 +1,35 @@
+.product-tag__heading {
+  margin: 0;
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: $color-primary;
+
+}
+
+.product-tags {
+  margin-bottom: -10px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.product-tags__item{
+  margin-bottom: 10px;
+
+}
+
+.product-tags__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+
+@media only screen and (max-width: 700px){
+  .product-tag {
+    display: none;
+  }
+
+}
