@@ -38,3 +38,12 @@
   }
 
 }
+
+@media only screen and (max-width: 920px) {
+  .form-search__input {
+    &::placeholder {
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+}
