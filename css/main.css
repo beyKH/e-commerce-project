@@ -898,6 +898,7 @@ body {
   color: #6A983C;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
+  white-space: nowrap;
 }
 
 .footer-maps__link:hover {
@@ -976,5 +977,22 @@ body {
   padding: 4px 10px;
   background-color: #f5f5f5;
   border-radius: 12px;
+}
+
+.copyright {
+  margin-top: 40px;
+}
+
+.copy-right__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 19px;
+  color: #151515;
+}
+
+@media only screen and (max-width: 700px) {
+  .copyright {
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=main.css.map */
