@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   padding: 16px 45px;
+  border-bottom: 2px solid #f9f9f9;
 }
 .header-top__chat{
   color: $color-secondary;
@@ -11,6 +12,10 @@
 }
 .header-top__phone{
   margin: 0 32px;
+
+    &:hover {
+      color: $color-secondary-light;
+    }
 }
 .header-top__phone,
 .header-top__email{
@@ -18,6 +23,11 @@
   line-height: 16px;
   color: $color-primary;
   text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $color-secondary-light;
+  }
 }
 .header-top__right{
   padding: 0;
@@ -33,16 +43,15 @@
   font-size: 12px;
   line-height: 16px;
   color: $color-secondary;
+  transition: border-bottom 0.3s ease;
+
+    &:hover {
+      border-bottom: 1px solid $color-secondary;
+    }
 }
-@media only screen and(max-width: 700px) {
+@media only screen and(max-width: 730px) {
   .site-header__top{
     display: none;
   }
 }
 
-@media only screen and (max-width: 1260px) {
-
-  .site-header__sitenav-box{
-    display: none;
-  }
-}
