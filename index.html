@@ -4,21 +4,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>E-coommerce</title>
-
   <title>E-commerce</title>
-
   <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
   <div class="container">
-
     <header class="site-header site-header--open">
       <div class="site-header__top header-top">
         <div class="header-top__left">
-          <a href="#" class="header-top__chat">Chat with us</a>
-          <a href="tel:+420336775664" class="header-top__phone">+420 336 775 664</a>
-          <a href="mailto:info@freshnesecom.com" class="header-top__email">info@freshnesecom.com</a>
+          <a class="header-top__chat" href="#">Chat with us</a>
+          <a class="header-top__phone" href="tel:+420336775664">+420 336 775 664</a>
+          <a class="header-top__email" href="mailto:info@freshnesecom.com">info@freshnesecom.com</a>
         </div>
         <ul class="header-top__right">
           <li class="header-top__right-item">
@@ -33,143 +29,65 @@
         </ul>
       </div>
 
-    <!--     MIDLLE   -->
-    <div class="site-header__middle">
-      <a class="site-header__middle--link" href="index.html">
-        <img class="site-header__middle--img" src="img/site-logo.svg" alt="logo site" width="177" height="50">
-      </a>
+      <!--     MIDLLE   -->
+      <div class="site-header__middle">
+        <a class="site-header__middle--link" href="index.html">
+          <img class="site-header__middle--img" src="img/site-logo.svg" alt="logo site" width="177" height="50">
+        </a>
 
-      <form class="site-header__form form-search" action="https://echo.htmlacademy.ru" method="GET">
-        <div class="form-search__wrapper">
-          <select class="form-search__select" name="categories" aria-label="Category">
-            <option value="All" id="">All categories</option>
-            <option value="Bakery">Bakery</option>
-            <option value="Fruit and vegetables">Fruit and vegetables</option>
-            <option value="Meat and fish">Meat and fish</option>
-            <option value="Drinks">Drinks</option>
-            <option value="Kitchen">Kitchen</option>
-          </select>
-        </div>
-        <input class="form-search__input" type="search" name="search" aria-label="search"
+        <form class="site-header__form form-search" action="https://echo.htmlacademy.ru" method="GET">
+          <div class="form-search__wrapper">
+            <select class="form-search__select" name="categories" aria-label="Category">
+              <option value="All">All categories</option>
+              <option value="Bakery">Bakery</option>
+              <option value="Fruit and vegetables">Fruit and vegetables</option>
+              <option value="Meat and fish">Meat and fish</option>
+              <option value="Drinks">Drinks</option>
+              <option value="Kitchen">Kitchen</option>
+            </select>
+          </div>
+          <input class="form-search__input" type="search" name="search" aria-label="search"
           placeholder="Search Products, categories ...">
-      </form>
+        </form>
 
-      <ul class="site-header__account">
-        <li class="site-header__account--item">
-          <a class="site-header__account--icon js-site-header__account--icon" href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" fill="currentColor">
-              <path d="M0 0h24v24H0V0z" fill="none"></path>
-              <path
+        <ul class="site-header__account">
+          <li class="site-header__account--item">
+            <button class="site-header__account--link js-site-header__account--link">
+              <svg class="site-header__account--icon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" fill="currentColor">
+                <path d="M0 0h24v24H0V0z" fill="none"></path>
+                <path
                 d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
               </path>
             </svg>
-          </a>
+          </button>
         </li>
         <li class="site-header__account--item">
-          <a class="site-header__account--link" href="#">
-            <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <button class="site-header__account--btn">
+            <svg class="site-header__account--icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M3 22l.79-2.88c2.61-9.5 13.81-9.5 16.42 0L21 22" stroke="#151515" stroke-width="2.5"
-                stroke-linecap="round" stroke-linejoin="round" />
+              stroke-linecap="round" stroke-linejoin="round" />
               <path d="M12 11.98a5 5 0 100-10 5 5 0 000 10z" stroke="#151515" stroke-width="2.5" stroke-linecap="round"
-                stroke-linejoin="bevel" /></svg>
-          </a>
-        </li>
-        <li class="site-header__account--item">
-          <a class="site-header__account--link" href="#">
-            <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
+              stroke-linejoin="bevel" /></svg>
+            </button>
+          </li>
+          <li class="site-header__account--item">
+            <button  class="site-header__account--btn">
+              <svg class="site-header__account--icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
                 d="M17.89 20.85H6.11a1.42 1.42 0 01-1.38-1.08L2.08 9.16a.7.7 0 01.68-.87h18.48a.7.7 0 01.68.87l-2.65 10.61a1.42 1.42 0 01-1.38 1.08v0zM9.8 3.15L6.9 8.29M13.88 3.15l2.91 5.14"
                 stroke="#151515" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" /></svg>
-            <span class="site-header__account--count">4</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-
-      <!-- SITENAV -->
-      <div class="site-header__sitenav-box">
-        <nav class="site-header__sitenav-box--open sitenav">
-          <ul class="sitenav__list">
-            <li class="sitenav__item">
-              <a class="sitenav__link" href="#">Bakery</a>
-              <ul class="sitenav__dropdown-list">
-                <li class="sitenav__dropdown-item">
-                  <a class="sitenav__dropdown__link" href="#">Bread</a>
-                </li>
-                <li class="sitenav__dropdown-item">
-                  <a class="sitenav__dropdown__link" href="#">Special bread</a>
-                </li>
-                <li class="sitenav__dropdown-item">
-                  <a class="sitenav__dropdown__link" href="#">Premium bread</a>
-                </li>
-              </ul>
+                <span class="site-header__account--count">4</span>
+              </button>
             </li>
-            <li class="sitenav__item">
-              <a class="sitenav__link" href="#">Fruit and vegetables</a>
-              <ul class="sitenav__dropdown-list">
-                <li class="sitenav__dropdown-item">
-                  <a class="sitenav__dropdown__link" href="#">Tomato</a>
-                </li>
-                <li class="sitenav__dropdown-item">
-                  <a class="sitenav__dropdown__link" href="#">Potato</a>
-                </li>
-                <li class="sitenav__dropdown-item">
-                  <a class="sitenav__dropdown__link" href="#">Onion</a>
-                </li>
-              </ul>
-            </li>
-            <li class="sitenav__item">
-              <a class="sitenav__link" href="#">Meat and fish</a>
-               <ul class="sitenav__dropdown-list">
-                 <li class="sitenav__dropdown-item">
-                   <a class="sitenav__dropdown__link" href="#">Beef</a>
-                 </li>
-                 <li class="sitenav__dropdown-item">
-                   <a class="sitenav__dropdown__link" href="#">Fish</a>
-                 </li>
-                 <li class="sitenav__dropdown-item">
-                   <a class="sitenav__dropdown__link" href="#">Lasos</a>
-                 </li>
-               </ul>
-            </li>
-            <li class="sitenav__item">
-              <a class="sitenav__link" href="#">Drinks</a>
-              <ul class="sitenav__dropdown-list">
-                <li class="sitenav__dropdown-item">
-                  <a class="sitenav__dropdown__link" href="#">Coca Cola</a>
-                </li>
-                <li class="sitenav__dropdown-item">
-                  <a class="sitenav__dropdown__link" href="#">Pepsi</a>
-                </li>
-                <li class="sitenav__dropdown-item">
-                  <a class="sitenav__dropdown__link" href="#">Fanta</a>
-                </li>
-              </ul>
-            </li>
-            <li class="sitenav__item">
-              <a class="sitenav__link" href="#">Kitchen</a>
-              <ul class="sitenav__dropdown-list">
-                <li class="sitenav__dropdown-item">
-                  <a class="sitenav__dropdown__link" href="#">Hot-dog</a>
-                </li>
-                <li class="sitenav__dropdown-item">
-                  <a class="sitenav__dropdown__link" href="#">Burger</a>
-                </li>
-                <li class="sitenav__dropdown-item">
-                  <a class="sitenav__dropdown__link" href="#">Kazan Kebab</a>
-                </li>
-              </ul>
-            </li>
-            <li class="sitenav__item">
-              <a class="sitenav__link" href="#">Special nutrition</a>
-            </li>
-            <li class="sitenav__item">
-              <a class="sitenav__link" href="#">Baby</a>
-            </li>
-            <li class="sitenav__item">
-              <a class="sitenav__link" href="#">Pharmacy</a>
+            <li class="site-header__account--item">
+              <button  class="site-header__account--burger js-site-header__account--btn">
+                <svg width="23" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#000" stroke-width="2" stroke-linecap="round" d="M22 1H1M22 9H1M22 17H1"/></svg>
+              </button>
             </li>
           </ul>
+
+        </div>
+
         </nav>
       </div>
     </header>
@@ -329,16 +247,105 @@
 
   </div>
 
-
-
-  <section class="search-modal modal">
-    <div class="modal-dialog">
-      <form class="search-modal__form" action="https://echo.htmlacademy.ru" method="GET">
-        <input class="search-modal__input" type="search" name="search" aria-label="Search"
-          placeholder="Search products">
-      </form>
+      <!-- SITENAV -->
+        <div class="site-header__sitenav-box">
+          <nav class="site-header__sitenav-box--open sitenav">
+            <ul class="sitenav__list">
+              <li class="sitenav__item">
+                <a class="sitenav__link" href="#">Bakery</a>
+                <ul class="sitenav__dropdown-list">
+                  <li class="sitenav__dropdown-item">
+                    <a class="sitenav__dropdown__link" href="#">Bread</a>
+                  </li>
+                  <li class="sitenav__dropdown-item">
+                    <a class="sitenav__dropdown__link" href="#">Special bread</a>
+                  </li>
+                  <li class="sitenav__dropdown-item">
+                    <a class="sitenav__dropdown__link" href="#">Premium bread</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="sitenav__item">
+                <a class="sitenav__link" href="#">Fruit and vegetables</a>
+                <ul class="sitenav__dropdown-list">
+                  <li class="sitenav__dropdown-item">
+                    <a class="sitenav__dropdown__link" href="#">Tomato</a>
+                  </li>
+                  <li class="sitenav__dropdown-item">
+                    <a class="sitenav__dropdown__link" href="#">Potato</a>
+                  </li>
+                  <li class="sitenav__dropdown-item">
+                    <a class="sitenav__dropdown__link" href="#">Onion</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="sitenav__item">
+                <a class="sitenav__link" href="#">Meat and fish</a>
+                <ul class="sitenav__dropdown-list">
+                  <li class="sitenav__dropdown-item">
+                    <a class="sitenav__dropdown__link" href="#">Beef</a>
+                  </li>
+                  <li class="sitenav__dropdown-item">
+                    <a class="sitenav__dropdown__link" href="#">Fish</a>
+                  </li>
+                  <li class="sitenav__dropdown-item">
+                    <a class="sitenav__dropdown__link" href="#">Lasos</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="sitenav__item">
+                <a class="sitenav__link" href="#">Drinks</a>
+                <ul class="sitenav__dropdown-list">
+                  <li class="sitenav__dropdown-item">
+                    <a class="sitenav__dropdown__link" href="#">Coca Cola</a>
+                  </li>
+                  <li class="sitenav__dropdown-item">
+                    <a class="sitenav__dropdown__link" href="#">Pepsi</a>
+                  </li>
+                  <li class="sitenav__dropdown-item">
+                    <a class="sitenav__dropdown__link" href="#">Fanta</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="sitenav__item">
+                <a class="sitenav__link" href="#">Kitchen</a>
+                <ul class="sitenav__dropdown-list">
+                  <li class="sitenav__dropdown-item">
+                    <a class="sitenav__dropdown__link" href="#">Hot-dog</a>
+                  </li>
+                  <li class="sitenav__dropdown-item">
+                    <a class="sitenav__dropdown__link" href="#">Burger</a>
+                  </li>
+                  <li class="sitenav__dropdown-item">
+                    <a class="sitenav__dropdown__link" href="#">Kazan Kebab</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="sitenav__item">
+                <a class="sitenav__link" href="#">Special nutrition</a>
+              </li>
+              <li class="sitenav__item">
+                <a class="sitenav__link" href="#">Baby</a>
+              </li>
+              <li class="sitenav__item">
+                <a class="sitenav__link" href="#">Pharmacy</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
     </div>
-  </section>
+    <div class="search-modal modal">
+      <div class="modal-dialog">
+        <form class="search-modal__form" action="https://echo.htmlacademy.ru" method="GET">
+          <input class="search-modal__input" type="search" name="search" aria-label="Search"
+          placeholder="Search products">
+        </form>
+      </div>
+    </div>
 
-</body>
-</html>
+    <script src="js/main.js"></script>
+
+  </body>
+  </html>
+  

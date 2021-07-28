@@ -2,34 +2,56 @@
   @include listunstyled;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .site-header__account--item:not(:last-child) {
   margin-right: 40px;
 }
 
-.site-header__account--icon {
+.site-header__account--link {
   display: none;
   color: #000;
+  border: 0;
+  background-color: transparent;
+
+    &:hover {
+      color: $color-secondary-light;
+    }
 }
 
-.site-header__account--link {
+.site-header__account--btn {
   display: inline-block;
-  flex-shrink: 0;
   position: relative;
-  z-index: 1;
+  z-index: 2;
+  flex-shrink: 0;
   color: #000;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
 
   &:hover {
     color: $color-secondary-light;
   }
 }
 
+.site-header__account--burger {
+  display: inline-block;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+  color: #000;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  display: none;
+}
+
 .site-header__account--count {
   position: absolute;
   z-index: 1;
-  top: 12px;
-  right: 12px;
+  bottom: 0;
+  left: 0;
   background-color: $color-orange;
   border-radius: 50%;
   width: 16px;
@@ -44,7 +66,23 @@
 }
 
 @media only screen and (max-width: 870px) {
-  .site-header__account--icon {
+  .site-header__account--link {
     display: block;
+  }
+}
+
+@media only screen and (max-width: 685px) {
+  .site-header__account--item:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  .site-header__account--burger {
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .site-header__account--item:not(:last-child) {
+    margin-right: 10px;
   }
 }
