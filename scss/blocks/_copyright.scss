@@ -1,0 +1,17 @@
+.copyright {
+  margin-top: 40px;
+}
+
+.copy-right__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 19px;
+  color: $color-primary;
+}
+
+
+@media only screen and (max-width: 700px) {
+  .copyright{
+    text-align: center;
+  }
+}

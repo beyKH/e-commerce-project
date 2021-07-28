@@ -956,4 +956,134 @@ body {
     padding-top: 90px;
   }
 }
+
+.footer {
+  padding: 64px 45px;
+  background-color: #fff;
+}
+
+.footer-maps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.footer-map:not(:last-child) {
+  margin-right: 200px;
+}
+
+.footer-map {
+  width: 120px;
+}
+
+.footer__heading {
+  margin: 0;
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #151515;
+}
+
+.footer-maps__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-maps__item:not(:last-child) {
+  margin-bottom: 19px;
+}
+
+.footer-maps__link {
+  text-decoration: none;
+  display: inline-block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #6A983C;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.footer-maps__link:hover {
+  color: rgba(106, 152, 60, 0.8);
+}
+
+.footer-maps__link:active {
+  color: rgba(106, 152, 60, 0.6);
+}
+
+@media only screen and (max-width: 768px) {
+  .footer-map:not(:last-child) {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+  .footer-map {
+    width: 50%;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .footer-map {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .footer-map:not(:last-child) {
+    margin-bottom: 40px;
+    margin-right: 0;
+  }
+}
+
+.product-tag__heading {
+  margin: 0;
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #151515;
+}
+
+.product-tags {
+  margin-bottom: -10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.product-tags__item {
+  margin-bottom: 10px;
+}
+
+.product-tags__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+@media only screen and (max-width: 700px) {
+  .product-tag {
+    display: none;
+  }
+}
+
+.tags-item__link {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #151515;
+  text-decoration: none;
+  padding: 4px 10px;
+  background-color: #f5f5f5;
+  border-radius: 12px;
+}
 /*# sourceMappingURL=main.css.map */
